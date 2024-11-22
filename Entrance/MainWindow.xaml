@@ -1,0 +1,50 @@
+﻿<Window
+    x:Class="Entrance.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Entrance"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid Background="#FAF3F0">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <!-- RadioButton 0-89 cm -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <RadioButton GroupName="LengthGroup" x:Name="Radio0_89" />
+                <TextBlock Text="0–89 cm" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <!-- RadioButton 90-109 cm -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <RadioButton GroupName="LengthGroup" x:Name="Radio90_109" />
+                <TextBlock Text="90–109 cm" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <!-- RadioButton 110-129 cm -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <RadioButton GroupName="LengthGroup" x:Name="Radio110_129" />
+                <TextBlock Text="110–129 cm" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <!-- RadioButton 130-139 cm -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <RadioButton GroupName="LengthGroup" x:Name="Radio130_139" />
+                <TextBlock Text="130–139 cm" HorizontalAlignment="Center" />
+            </StackPanel>
+
+            <!-- RadioButton Över 140 cm -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <RadioButton GroupName="LengthGroup" x:Name="RadioOver140" />
+                <TextBlock Text="Över 140 cm" HorizontalAlignment="Center" />
+            </StackPanel>
+            </StackPanel>
+
+            <!-- Checkbox för "Med vuxen" -->
+        <CheckBox Content="Med vuxen" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,20,0,0" x:Name="WithAdult" />
+
+
+    </Grid>
+</Window>
